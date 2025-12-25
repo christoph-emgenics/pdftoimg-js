@@ -1,0 +1,15 @@
+{
+  "name": "pdftoimg-browser-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "vite": "^5.2.0"
+  }
+}

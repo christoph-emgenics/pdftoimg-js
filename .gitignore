@@ -4,3 +4,10 @@ dist
 output
 .tsup
 src/bin
+.yarn
+.pnp.*
+coverage
+playwright-report
+test-results
+out
+legacy-out
