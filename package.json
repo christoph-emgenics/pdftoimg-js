@@ -1,7 +1,7 @@
 {
   "name": "pdftoimg-js",
   "description": "Convert PDFs to images in Node.js and browsers using pdfjs-dist.",
-  "version": "0.4.0",
+  "version": "0.3.1-beta",
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
