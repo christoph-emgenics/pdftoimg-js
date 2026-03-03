@@ -1,8 +1,7 @@
-let workerSrc: string =
-  "https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.449/legacy/build/pdf.worker.min.mjs";
+export let workerSrc: string = "/assets/pdf.worker.min.mjs";
 
 export function setPdfWorkerSrc(src: string) {
-  if(src) {
+  if (src) {
     workerSrc = src;
   }
 }

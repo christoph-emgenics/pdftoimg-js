@@ -9,6 +9,7 @@ import {
 } from "./shared";
 import type { NormalizedLegacyOptions } from "./shared";
 import type { LegacyOptions, LegacyPdfSrc, LegacyReturn } from "./types";
+import { workerSrc } from "../browser/pdf";
 
 export async function pdfToImg<
   O extends LegacyOptions = LegacyOptions,
@@ -28,6 +29,7 @@ export async function singlePdfToImg(
   options?: Partial<LegacyOptions>,
 ): Promise<string | string[]> {
   const pdfjsLib = await import("pdfjs-dist/legacy/build/pdf.mjs");
+  pdfjsLib.GlobalWorkerOptions.workerSrc = workerSrc;
   const normalized = normalizeLegacyOptions(options);
   const input = await resolveBrowserInput(src);
 

@@ -24,7 +24,7 @@
     }
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && cp src/browser/pdf.worker.min.mjs dist/",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run",
     "test:unit": "vitest run tests/unit",
