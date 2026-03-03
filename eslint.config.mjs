@@ -23,6 +23,7 @@ export default defineConfig([
       "examples/**",
       "fixtures/**",
       "tests/browser/dist/**",
+      "src/browser/pdf.worker.min.mjs",
     ],
   },
   {

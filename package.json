@@ -32,7 +32,7 @@
     "test:browser": "playwright test",
     "lint": "eslint .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,js,json,md}\"",
-    "prepare": "husky"
+    "prepare": "npm run build"
   },
   "keywords": [
     "pdftoimg-js",
